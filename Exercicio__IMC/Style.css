@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: auto;
+    background: rgb(18, 199, 212);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.BodyTable {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    padding: 40px;
+}
+
+.textTopo01 {
+    font-size: 16pt;
+   
+}
+
+.textTopo02 {
+    font-size: 16pt;
+}
+
+.InputANDButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.InputANDButton label{
+    font-size: 18pt;
+    margin-left: 10px;
+}
+.InputANDButton input{
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 0 24px;
+    font-size: 18pt;
+}
+.InputANDButton input:focus{
+    outline: 2px solid blue;
+}
+
+.InputANDButton button {
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(18, 199, 212) ;
+    border: none;
+    font-size: 18pt;
+    cursor: pointer;
+}
+.InputANDButton button:hover{
+    background-color:  rgb(21, 132, 139);
+}
+.InputANDButton h1{
+    margin: 10px auto;
+    font-size: 35pt;
+    font-weight: 600;
+}
+#Resultado{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12pt;
+    color: #fff;
+}
+#buttonLimpar{
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: rgb(255, 0, 0) ;
+    border: none;
+    font-size: 18pt;
+    cursor: pointer;
+}
+#buttonLimpar:hover{
+    background-color:  rgb(199, 0, 0);
+}

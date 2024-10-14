@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio IMC</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="BodyTable">
+            <div class="textTopo01">
+                <h1>IMC</h1>
+                <p>
+                    Menos do que 18,5 <br>
+                    Entre 18,5 e 24,9 <br>
+                    Entre 25 e 29,9 <br>
+                    Entre 30 e 34,9 <br>
+                    Entre 35 e 39,9 <br>
+                    Mais do que 40
+                </p>
+            </div>
+            <div class="textTopo02">
+                <h1>Resultado</h1>
+                <p>
+                    Abaixo do peso <br>
+                    Peso normal <br>
+                    Sobrepeso <br>
+                    Obesidade grau 1 <br>
+                    Obesidade grau 2 <br>
+                    Obesidade grau 3 <br>
+                </p>
+            </div>
+        </div>
+        <div class="InputANDButton">
+            <h1>Calcule Aqui</h1>
+            <label for="Peso">Peso</label>
+            <input type="text" id="Peso">
+            <label for="Altura">Altura</label>
+            <input type="text" id="Altura">
+            <button onclick="Calcular()">Calcular</button>
+            <button onclick="Clear()" id="buttonLimpar">Limpar</button>
+        </div>
+        <div id="Resultado"></div>
+    </div>
+    <!-- Link -->
+    <script src="Main.js"></script>
+</body>
+
+</html>
