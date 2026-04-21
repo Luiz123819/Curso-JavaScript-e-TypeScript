@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relógio Digital</title>
+  </head>
+  <body>
+    <style>
+      * {
+        width: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      .container {
+        background-color: white;
+        width: 100%;
+
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content {
+        position: relative;
+
+        flex-direction: column;
+        width: 100%;
+      }
+      div span {
+        color: gray;
+      }
+      div h1 {
+        text-align: center;
+
+        font-size: 40pt;
+      }
+    </style>
+
+    <div class="container">
+      <div class="content">
+        <span id="data"></span>
+        <h1 id="hours">13:30:23</h1>
+      </div>
+    </div>
+
+    <script>
+      function Data() {
+        const dataText = document.getElementById("data");
+        const data = new Date();
+
+        const Ano = data.getFullYear();
+        const Mes = data.getMonth();
+        const Dia = data.getDate();
+
+        dataText.innerHTML = `${Dia} / ${Mes} / ${Ano}`;
+      }
+      function horaAtual() {
+        const agora = new Date();
+
+        const hourText = document.getElementById("hours");
+
+        const Hora = String(agora.getHours()).padStart(2, "0");
+        const Minutos = String(agora.getMinutes()).padStart(2, "0");
+        const Segundos = String(agora.getSeconds()).padStart(2, "0");
+
+        let textFormat = `${Hora}:${Minutos}:${Segundos}`;
+        hourText.innerHTML = textFormat;
+
+        console.log(Hora, Minutos, Segundos);
+      }
+
+      setInterval(horaAtual, 1000);
+
+      horaAtual();
+      Data();
+    </script>
+  </body>
+</html>
